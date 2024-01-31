@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url(blog-preview-card-main/assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+html{
+    background: linear-gradient(to bottom, hsl(41, 100%, 66%), hsl(51, 100%, 66%));
+    display: grid;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.main-card{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Figtree';
+    padding: 20px;
+    width: 340px;
+    height: auto;
+    border: 1.5px solid hsl(0, 0%, 7%);
+    word-wrap: normal;
+    border-radius: 20px;
+    box-shadow: 7px 7px 0px hsl(0, 0%, 7%);
+    background: #ffffff;
+}
+
+.img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1{
+    margin-bottom: 3px;
+}
+
+.learning-span{
+    font-size: 1rem;
+    font-weight: 800;
+    background-color: hsl(51, 100%, 66%);
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.date{
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.avatar-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-top: 14px;
+    margin-bottom: 0;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.title:focus{
+    color: hsl(39, 98%, 63%);
+}
+
+.title:hover{
+    color: hsl(39, 98%, 63%);
+}
+
+.words{
+    color: hsl(0, 0%, 50%);
+    margin-top: 20px;
+}
+
+.avatar{
+    width: 37px;
+    height: 38px;
+}
+
+.name{
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+@media screen and (width < 550px) {
+    .main-card{
+        width: 280px;
+    }
+}
